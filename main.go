@@ -14,6 +14,8 @@ var CLI struct {
 	GenerateCert   cmd.GenerateCertCmd   `cmd:"" help:"Generate a certificate and sign it with the CA key."`
 	GenerateCSR    cmd.GenerateCSRCmd    `cmd:"" help:"Generate a certificate signing request."`
 	SignCSR        cmd.SignCSRCmd        `cmd:"" help:"Sign the CSR with the Root CA."`
+	GenerateToken  cmd.GenerateTokenCmd  `cmd:"" help:"Generate and sign JWT token."`
+	VerifyToken    cmd.VerifyTokenCmd    `cmd:"" help:"Verify a signed JWT token."`
 }
 
 func main() {
