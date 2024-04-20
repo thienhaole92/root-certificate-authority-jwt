@@ -11,7 +11,7 @@ import (
 
 type GenerateTokenCmd struct {
 	Key  string `arg:"" required:"" name:"key" help:"Path to key file." type:"path"`
-	Data string `arg:"" required:"" name:"data" help:"Custom data." type:"path"`
+	Data string `arg:"" required:"" name:"data" help:"Custom data." type:"string"`
 }
 
 func (c *GenerateTokenCmd) Run(ctx *context.Context) error {
